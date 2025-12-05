@@ -1,0 +1,34 @@
+### Read all todos
+GET http://localhost:8000/todos/read
+X-API-Key: test-api-key
+
+###
+
+### Create a new todo
+POST http://localhost:8000/todos/create
+X-API-Key: test-api-key
+Content-Type: application/json
+
+{
+    "name": "Buy groceries",
+    "order": 1,
+    "completed": false
+}
+
+###
+
+### Update todo name and order
+PATCH http://localhost:8000/todos/update/1
+X-API-Key: test-api-key
+Content-Type: application/json
+
+{
+    "name": "Buy groceries and cook dinner",
+    "order": 4
+}
+
+###
+
+### Delete a todo
+DELETE http://localhost:8000/todos/delete/1
+X-API-Key: test-api-key
