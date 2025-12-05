@@ -21,6 +21,7 @@ export type ToggelTodoResponse = {
 
 export type DeleteTodoResponse = {
     successful: boolean;
+    deletedTodo: TodoItem;
     todos: TodoItem[];
     error: string;
 }

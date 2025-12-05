@@ -58,7 +58,7 @@ async def create_todo(
         logger.info(f"Todo created successfully with id: {db_todo.id}")
         return {
             "success": True,
-            "created_todo": db_todo,
+            "createdTodo": db_todo,
             "todos": todos,
             "error": None,
         }
@@ -69,7 +69,7 @@ async def create_todo(
         logger.error(f"Failed to create todo: {str(e)}")
         return {
             "success": False,
-            "created_todo": None,
+            "createdTodo": None,
             "todos": todos,
             "error": str(e),
         }
@@ -102,7 +102,7 @@ async def update_todo(
         logger.info(f"Todo {todo_id} updated successfully")
         return {
             "success": True,
-            "updated_todo": db_todo,
+            "updatedTodo": db_todo,
             "todos": todos,
             "error": None,
         }
@@ -114,7 +114,7 @@ async def update_todo(
         logger.error(f"Failed to update todo {todo_id}: {str(e)}")
         return {
             "success": False,
-            "updated_todo": None,
+            "updatedTodo": None,
             "todos": todos,
             "error": str(e),
         }
@@ -149,7 +149,7 @@ async def delete_todo(
         logger.info(f"Todo {todo_id} deleted successfully")
         return {
             "success": True,
-            "deleted_todo": deleted_todo,
+            "deletedTodo": deleted_todo,
             "todos": todos,
             "error": None,
         }
@@ -161,7 +161,7 @@ async def delete_todo(
         logger.error(f"Failed to delete todo {todo_id}: {str(e)}")
         return {
             "success": False,
-            "deleted_todo": None,
+            "deletedTodo": None,
             "todos": todos,
             "error": str(e),
         }
