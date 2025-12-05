@@ -15,7 +15,7 @@ export default function Item({ item, deleteItem, toggleItem }: TodoItemProps) {
                 <span className="icon material-symbols-outlined cursor-pointer" onClick={() => toggleItem(id)}>
                     {completed ? "check_box" : "check_box_outline_blank"}
                 </span>
-                <span className="material-symbols-outlined cursor-pointer text-red-500" onClick={() => deleteItem(id)}>
+                <span className="material-symbols-outlined cursor-pointer text-[#ff3a5b]" onClick={() => deleteItem(id)}>
                      delete
                 </span>
             </div>

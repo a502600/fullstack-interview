@@ -7,20 +7,20 @@ export type TodoItem = {
 
 export type CreateTodoResponse = {
     successful: boolean;
-    item: TodoItem;
-    items: TodoItem[];
+    createdTodo: TodoItem;
+    todos: TodoItem[];
     error: string;
 }
 
 export type ToggelTodoResponse = {
     successful: boolean;
-    item: TodoItem;
-    items: TodoItem[];
+    updatedTodo: TodoItem;
+    todos: TodoItem[];
     error: string;
 }
 
 export type DeleteTodoResponse = {
     successful: boolean;
-    items: TodoItem[];
+    todos: TodoItem[];
     error: string;
 }
